@@ -1,11 +1,23 @@
 * {
   transition: 500ms;
 }
+
+.title {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 .btnBox {
+  width: 30%;
+  height: 300px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  border: 2px solid lightgray;
+  border-radius: 10px;
+  position: relative;
 }
 
 .toggleBox {
