@@ -1,4 +1,9 @@
 .App {
   display: flex;
+  flex-direction: column;
+}
+
+.Apps {
+  display: flex;
   flex-direction: row;
 }
