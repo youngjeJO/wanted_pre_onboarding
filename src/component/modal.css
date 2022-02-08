@@ -1,4 +1,4 @@
-.modalBox {
+.Box {
   width: 30%;
   height: 300px;
   display: flex;
@@ -8,6 +8,7 @@
   border: 2px solid lightgray;
   border-radius: 10px;
   position: relative;
+  margin: 3% 3%;
 }
 
 .modalBtn {

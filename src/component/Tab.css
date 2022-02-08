@@ -1,0 +1,54 @@
+.tabBox {
+  width: 90%;
+  position: absolute;
+}
+
+.tabList {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  bottom: 100px;
+}
+
+.tabList > li {
+  overflow: visible;
+  list-style: none;
+  background-color: aquamarine;
+  width: 100%;
+  height: 90%;
+  max-width: 400px;
+  cursor: pointer;
+}
+
+.tabName {
+  display: inline-block;
+  padding: 10px 5px 10px 3px;
+  width: 90%;
+}
+
+.contents {
+  display: none;
+  position: absolute;
+  text-align: center;
+  left: 0;
+  background-color: whitesmoke;
+  width: 100%;
+  height: 200px;
+}
+
+.contents > span {
+  position: relative;
+  top: calc(40% - 10px);
+  font-size: 20px;
+}
+.bgChange {
+  background-color: rgb(33, 122, 108);
+  color: white;
+}
+
+.show {
+  display: block;
+}

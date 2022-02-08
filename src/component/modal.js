@@ -20,7 +20,7 @@ const modal = (props) => {
   };
 
   return (
-    <div className='modalBox'>
+    <div className='Box'>
       <span className='title'>modal</span>
       <div className='modalBtn' onClick={openBtn}>
         Open Modal

@@ -8,18 +8,6 @@
   left: 0;
 }
 
-.btnBox {
-  width: 30%;
-  height: 300px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  border: 2px solid lightgray;
-  border-radius: 10px;
-  position: relative;
-}
-
 .toggleBox {
   display: flex;
   justify-content: left;
@@ -30,6 +18,7 @@
   overflow: hidden;
 }
 .toggleBtn {
+  margin-left: 5px;
   width: 15px;
   height: 15px;
   border: none;
@@ -41,16 +30,16 @@
 .bgImg {
   position: absolute;
   top: -20px;
-  left: -100px;
+  left: -110px;
   width: 70px;
   height: 25px;
-  background-color: cornsilk;
+  background-color: rgb(33, 122, 108);
 }
 
 .btnMove {
-  transform: translateX(40px);
+  transform: translateX(35px);
 }
 
 .bgMove {
-  transform: translateX(60px);
+  transform: translateX(65px);
 }

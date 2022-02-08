@@ -11,7 +11,7 @@ const Toggle = (props) => {
   };
 
   return (
-    <div className='btnBox'>
+    <div className='Box'>
       <span className='title'>toggle</span>
       <div className='toggleBox'>
         <figure className='bgImg'></figure>
