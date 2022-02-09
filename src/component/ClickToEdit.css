@@ -1,0 +1,8 @@
+.editBox {
+  display: flex;
+  flex-direction: column;
+}
+
+.editBox > div {
+  margin: 10%;
+}
