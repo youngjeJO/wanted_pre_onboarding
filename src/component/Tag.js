@@ -8,7 +8,7 @@ const Tag = (props) => {
     setInputVal(event.target.value);
     console.log(inputList);
   };
-  const onsubmit = (event) => {
+  const onSubmit = (event) => {
     event.preventDefault();
     if (inputVal === '') {
       return;
@@ -44,7 +44,7 @@ const Tag = (props) => {
   return (
     <div className='Box'>
       <span className='title'>Tag</span>
-      <form onSubmit={onsubmit} className='tagBox'>
+      <form onSubmit={onSubmit} className='tagBox'>
         {pushTag}
         <input
           onChange={onChange}
