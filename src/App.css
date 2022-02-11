@@ -7,3 +7,10 @@
   display: flex;
   flex-direction: row;
 }
+
+@media (max-width: 750px) {
+  .Apps {
+    display: flex;
+    flex-direction: column;
+  }
+}
