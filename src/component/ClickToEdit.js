@@ -26,11 +26,21 @@ const ClickToEdit = (props) => {
       <form className='editBox'>
         <div>
           <label>이름</label>
-          <input value={name} onBlur={blurEvent} onChange={nameChange}></input>
+          <input
+            className='textBox'
+            value={name}
+            onBlur={blurEvent}
+            onChange={nameChange}
+          ></input>
         </div>
         <div>
           <label>나이</label>
-          <input value={age} onBlur={blurEvent} onChange={ageChange}></input>
+          <input
+            className='textBox'
+            value={age}
+            onBlur={blurEvent}
+            onChange={ageChange}
+          ></input>
         </div>
       </form>
       이름 {myName} 나이 {myAge}

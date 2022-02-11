@@ -28,7 +28,7 @@ const Tag = (props) => {
     <span className='tag' id={index}>
       {item}
       <span className='delete_btn' onClick={deleteBtn}>
-        x
+        X
       </span>
     </span>
   ));

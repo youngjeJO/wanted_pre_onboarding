@@ -3,7 +3,7 @@
   max-height: 20px;
   height: 50%;
   margin: 5px 10px;
-  padding: 5px;
+  padding: 0 5px 5px 5px;
   border: none;
   background-color: aquamarine;
   border-radius: 10px;
@@ -24,20 +24,19 @@
 }
 
 .inputBox {
-  width: 50%;
+  width: 70%;
   border: none;
   outline: none;
 }
 
 .delete_btn {
   display: inline;
-  padding: 0 5px;
+  vertical-align: middle;
+  padding: 0 3px;
   margin-left: 5px;
-  width: 40%;
-  height: 25%;
-  max-height: 5px;
   border-radius: 100%;
   background-color: rgb(33, 122, 108);
   color: white;
   box-shadow: 1px 1px 5px rgba(128, 128, 128, 0.336);
+  font-size: 3px;
 }

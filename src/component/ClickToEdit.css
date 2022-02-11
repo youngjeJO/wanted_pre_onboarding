@@ -6,3 +6,10 @@
 .editBox > div {
   margin: 10%;
 }
+
+.textBox {
+  border: none;
+  box-shadow: 1px 1px 3px gray;
+  border-radius: 5px;
+  outline: rgba(128, 128, 128, 0.336);
+}

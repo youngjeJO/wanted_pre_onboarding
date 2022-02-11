@@ -4,6 +4,7 @@
   width: 90%;
   border: 1px solid gray;
   border-radius: 5px;
+  box-shadow: 1px 1px 5px rgba(128, 128, 128, 0.336);
 }
 
 .searchBox {
