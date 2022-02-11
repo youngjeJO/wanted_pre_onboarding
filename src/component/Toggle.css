@@ -10,12 +10,16 @@
 
 .toggleBox {
   display: flex;
+  position: absolute;
   justify-content: left;
   width: 60px;
   border-radius: 40px;
-  border: 1px solid black;
+  border: 1px solid none;
   position: relative;
   overflow: hidden;
+  box-shadow: 1px 1px 5px rgba(128, 128, 128, 0.336);
+  /* -1px -1px 5px rgba(128, 128, 128, 0.096); */
+  background-color: whitesmoke;
 }
 .toggleBtn {
   margin-left: 5px;
@@ -24,7 +28,12 @@
   border: none;
   border-radius: 40px;
   background-color: aquamarine;
-  z-index: 1;
+  background: radial-gradient(
+    rgb(85, 253, 197),
+    rgba(127, 255, 212, 1),
+    rgba(33, 122, 109, 1)
+  );
+  /* box-shadow: 1px 1px 10px rgba(128, 128, 128, 0.336); */
 }
 
 .bgImg {
@@ -34,12 +43,19 @@
   width: 70px;
   height: 25px;
   background-color: rgb(33, 122, 108);
+  background: radial-gradient(
+    rgb(33, 122, 108),
+    rgba(33, 122, 109, 0.9),
+    rgba(33, 122, 109, 0.5)
+  );
 }
 
+/* 버튼 애니메이션 */
 .btnMove {
   transform: translateX(35px);
 }
 
+/* 배경 애니메이션 */
 .bgMove {
   transform: translateX(65px);
 }

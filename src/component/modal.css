@@ -16,10 +16,11 @@
   width: 130px;
   height: 20px;
   text-align: center;
-  border: 0;
+  border: none;
   background-color: aquamarine;
   border-radius: 40px;
   cursor: pointer;
+  box-shadow: 1px 1px 5px rgba(128, 128, 128, 0.336);
 }
 
 .modalBg {
