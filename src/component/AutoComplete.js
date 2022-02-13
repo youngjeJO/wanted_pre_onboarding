@@ -33,7 +33,7 @@ const AutoComplete = (props) => {
   useEffect(() => {
     setWordList(
       words.filter((item) => {
-        return item.includes(inputVal);
+        return item.includes(inputVal.toLowerCase());
       })
     );
   }, [inputVal]);
