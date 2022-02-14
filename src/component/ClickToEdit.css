@@ -11,5 +11,9 @@
   border: none;
   box-shadow: 1px 1px 3px gray;
   border-radius: 5px;
-  outline: rgba(128, 128, 128, 0.336);
+  outline: rgba(128, 128, 128, 0.3);
+}
+
+.textBox:focus {
+  background-color: whitesmoke;
 }

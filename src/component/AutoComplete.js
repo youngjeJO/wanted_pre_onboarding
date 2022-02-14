@@ -45,10 +45,9 @@ const AutoComplete = (props) => {
     }
     if (autoList.current.classList.contains('showList')) {
       autoList.current.classList.remove('showList');
-      console.log('잡았다 이놈');
     } else {
       autoList.current.classList.add('showList');
-      console.log('잡았다 요놈');
+
       setFocus(true);
     }
   };

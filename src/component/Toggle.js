@@ -3,7 +3,6 @@ import './Toggle.css';
 const Toggle = (props) => {
   const [onOff, setOnOff] = useState('off');
   const toggleEvent = (event) => {
-    // btn.current.style.transition = '2s';
     event.target.classList.toggle('btnMove');
     console.log(event);
     event.target.previousSibling.classList.toggle('bgMove');
