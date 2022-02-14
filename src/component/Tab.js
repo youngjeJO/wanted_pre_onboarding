@@ -23,7 +23,7 @@ const Tab = (props) => {
       <div className='tabBox'>
         <ul className='tabList'>
           <li>
-            <span className='tabName' onClick={tabClick}>
+            <span className='tabName bgChange' onClick={tabClick}>
               tab1
             </span>
             <div className='contents show'>

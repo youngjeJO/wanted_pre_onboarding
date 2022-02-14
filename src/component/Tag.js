@@ -3,7 +3,7 @@ import './Tag.css';
 
 const Tag = (props) => {
   const [inputVal, setInputVal] = useState('');
-  const [inputList, setInputList] = useState([]);
+  const [inputList, setInputList] = useState(['wanted', 'codestates']);
   const onChange = (event) => {
     setInputVal(event.target.value);
     console.log(inputList);

@@ -24,6 +24,11 @@
   box-shadow: 1px 1px 5px rgba(128, 128, 128, 0.336);
 }
 
+.modalBtn:hover {
+  background-color: rgb(33, 122, 108);
+  color: white;
+}
+
 .modalBg {
   display: none;
   position: fixed;
