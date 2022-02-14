@@ -24,8 +24,8 @@ const AutoComplete = (props) => {
     if (inputVal === '') {
       return;
     }
+    words.push(inputVal);
     setInputVal('');
-    setWordList((currentArray) => [...currentArray, inputVal]);
     setFocus(false);
     autoList.current.classList.remove('showList');
   };
@@ -40,10 +40,15 @@ const AutoComplete = (props) => {
 
   const onChange = (event) => {
     setInputVal(event.target.value);
+    if (focus === true) {
+      return;
+    }
     if (autoList.current.classList.contains('showList')) {
       autoList.current.classList.remove('showList');
+      console.log('잡았다 이놈');
     } else {
       autoList.current.classList.add('showList');
+      console.log('잡았다 요놈');
       setFocus(true);
     }
   };
@@ -52,6 +57,11 @@ const AutoComplete = (props) => {
       {item}
     </li>
   ));
+
+  const deleteBtn = () => {
+    setInputVal('');
+    autoList.current.classList.remove('showList');
+  };
 
   return (
     <div className='Box'>
@@ -62,8 +72,9 @@ const AutoComplete = (props) => {
           onChange={onChange}
           value={inputVal}
           type='text'
-          placeholder='hello'
+          placeholder='search anything'
         />
+        <span onClick={deleteBtn}>x</span>
         <ul ref={autoList} className='wL'>
           {pushWord}
         </ul>
