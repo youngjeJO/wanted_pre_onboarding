@@ -49,3 +49,25 @@
 - 실행 방법
 
   - tab1, tab2, tab3을 클릭하면 해당 text를 볼 수 있습니다.
+
+---
+
+## Tag
+
+- 구현 방법
+
+  - useState를 이용해 input의 value 값을 inputVal에 할당했습니다.
+  - onSubmit 함수가 실행되면 trim을 이용해 공백만 태그로 들어가지 않게했습니다. - value값을 얕은 복사를 통해 배열로 추가했습니다.
+  - pushTag 함수를 실행 될 때 마다 map을 이용해 <span>으로 감싼 inputVal값이  
+    return 되게 하여 tag가 출력되게 하였습니다.
+  - deleteBtn은 event가 일어날 때 마다 제거하는 기능을 만들기 위해
+    해당 부모 태그인 span에 parentNode를 사용해 접근하였고 id를 추적해 브라우저에
+    출력된 .tag와 inputList에 있는 배열 값까지 제거할 수 있도록 하였습니다.
+
+- 실행 방법
+
+  - Press enter to add tags 위에 원하는 text를 입력 후 enter 키를 누르면
+    입력한 value가 tag로 형성됩니다.
+  - delete Btn을 이용해 원하지 않는 tag는 삭제가 가능합니다.
+
+---

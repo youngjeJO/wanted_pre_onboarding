@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React, { useState } from 'react';
 import './Toggle.css';
 const Toggle = (props) => {
   const [onOff, setOnOff] = useState('off');

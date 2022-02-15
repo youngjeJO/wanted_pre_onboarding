@@ -4,18 +4,23 @@ import './Tag.css';
 const Tag = (props) => {
   const [inputVal, setInputVal] = useState('');
   const [inputList, setInputList] = useState(['wanted', 'codestates']);
+
+  //inputVal에 event.value를 넣어주는 함수
   const onChange = (event) => {
     setInputVal(event.target.value);
-    console.log(inputList);
   };
+
+  //inputVal 배열로 만들어주는 함수
   const onSubmit = (event) => {
     event.preventDefault();
-    if (inputVal === '') {
+    if (!inputVal.trim()) {
       return;
     }
     setInputVal('');
     setInputList((currentArray) => [...currentArray, inputVal]);
   };
+
+  //delete Btn
   const deleteBtn = (event) => {
     console.log(event.target.parentNode.id);
     let listId = event.target.parentNode.id;
@@ -24,6 +29,7 @@ const Tag = (props) => {
     setInputList(list);
   };
 
+  // tag 추가 함수
   const pushTag = inputList.map((item, index) => (
     <span className='tag' id={index}>
       {item}
@@ -32,14 +38,6 @@ const Tag = (props) => {
       </span>
     </span>
   ));
-
-  // const keyUpEvent = (event) => {
-  //   if (window.event.keyCode == 13) {
-  //     setInputList((currentArray) => [inputVal, ...currentArray]);
-  //     console.log('hi');
-  //     // 엔터키가 눌렸을 때
-  //   }
-  // };
 
   return (
     <div className='Box'>
