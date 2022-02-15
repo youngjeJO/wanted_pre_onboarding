@@ -11,6 +11,22 @@
 
 ---
 
+## ![전체화면](/src/img/전체화면.png)
+
+## ![반응형](/src/img/반응형.png)
+
+- css 구성
+  - ul는 전체적으로 도구모음 컨셉으로 한눈에 보일수 있도록 만들었습니다.
+  - aquamarine 색을 중심으로 컬러를 통일 시켰습니다.
+  - 전체적으로 box-shadow를 적용시켜 입체감이 있게 만들었습니다.
+  - transition을 전체적으로 줘 모든 이벤트 시 동일하게 적용되도록 하였습니다.
+  - Tag와 AutoComplete에 많은 데이터를 입력하면 박스 밖으로 나오는 것을
+    방지하기 위해 overflow: overlay를 적용하였습니다.
+  - 크기가 줄어들면 깨지는 현상을 대비해 컴포넌트들을 세로로 나열하는
+    반응형으로 제작하였습니다
+
+---
+
 ## Toggle
 
 - 구현 방법
@@ -107,3 +123,16 @@
   - x 버튼을 누르면 입력한 text를 삭제할 수 있습니다.
 
   ***
+
+## ClickToEdit
+
+- 구현 방법
+
+  - useState를 이용해 inputBox에 value 값을 name과 age에 할당하였습니다.
+
+  - blurEvent를 이용해 blur이벤트 발생 시 name과 age에 할당 된 값을
+    outputName과 outputAge에 할당하였습니다.
+
+- 실행 방법
+
+  - text 입력 후 다른 화면을 클릭하면 데이터가 업데이트 됩니다.

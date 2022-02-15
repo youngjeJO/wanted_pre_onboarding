@@ -12,7 +12,7 @@
   display: flex;
   position: absolute;
   justify-content: left;
-  width: 60px;
+  width: 50px;
   border-radius: 40px;
   border: 1px solid none;
   position: relative;
@@ -52,7 +52,7 @@
 
 /* 버튼 애니메이션 */
 .btnMove {
-  transform: translateX(35px);
+  transform: translateX(25px);
 }
 
 /* 배경 애니메이션 */

@@ -4,15 +4,14 @@ import './ClickToEdit.css';
 const ClickToEdit = (props) => {
   const [name, setName] = useState('조영제');
   const [age, setAge] = useState('29');
-  const [myName, setMyName] = useState('조영제');
-  const [myAge, setMyAge] = useState('29');
+  const [outputName, setMyName] = useState('조영제');
+  const [outputAge, setMyAge] = useState('29');
   const nameChange = (event) => {
     setName(event.target.value);
   };
 
   const ageChange = (event) => {
     setAge(event.target.value);
-    console.log(myAge);
   };
 
   const blurEvent = () => {
@@ -45,7 +44,7 @@ const ClickToEdit = (props) => {
           ></input>
         </div>
       </form>
-      이름 {myName} 나이 {myAge}
+      이름 {outputName} 나이 {outputAge}
     </div>
   );
 };
