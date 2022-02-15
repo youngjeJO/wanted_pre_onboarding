@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
-import './Toggle.css';
+import './css/Toggle.css';
+
 const Toggle = (props) => {
   const [onOff, setOnOff] = useState('off');
   const toggleEvent = (event) => {
     event.target.classList.toggle('btnMove');
-    console.log(event);
     event.target.previousSibling.classList.toggle('bgMove');
     onOff === 'off' ? setOnOff('on') : setOnOff('off');
   };

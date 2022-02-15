@@ -1,5 +1,5 @@
 import React from 'react';
-import './modal.css';
+import './css/modal.css';
 
 const modal = (props) => {
   const closeBtn = (evnet) => {

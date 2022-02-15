@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
-import './AutoComplete.css';
+import './css/AutoComplete.css';
 
 const words = [
   'avengers',

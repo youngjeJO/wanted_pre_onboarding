@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './Tag.css';
+import './css/Tag.css';
 
 const Tag = (props) => {
   const [inputVal, setInputVal] = useState('');

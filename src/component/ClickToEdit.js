@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './ClickToEdit.css';
+import './css/ClickToEdit.css';
 
 const ClickToEdit = (props) => {
   const [name, setName] = useState('조영제');
