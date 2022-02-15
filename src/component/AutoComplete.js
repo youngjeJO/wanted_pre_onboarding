@@ -21,7 +21,6 @@ const AutoComplete = (props) => {
   // input box를 리셋 시켜줌
   const onSubmit = (event) => {
     event.preventDefault();
-    console.log('hi');
     if (inputVal === '') {
       return;
     }
@@ -86,7 +85,7 @@ const AutoComplete = (props) => {
           placeholder='search anything'
         />
         <span onClick={deleteBtn}>x</span>
-        <ul ref={autoList} className='wL'>
+        <ul ref={autoList} className='word_list'>
           {pushWord}
         </ul>
       </form>

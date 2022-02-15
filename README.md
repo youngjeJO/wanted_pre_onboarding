@@ -56,6 +56,8 @@
 
 - 구현 방법
 
+  - 먼저 form 태그에 onSubmit event에 event.preventDefault(); 을 주어
+    새로고침이 일어나지 않게하였습니다.
   - useState를 이용해 input의 value 값을 inputVal에 할당했습니다.
   - onSubmit 함수가 실행되면 trim을 이용해 공백만 태그로 들어가지 않게했습니다. - value값을 얕은 복사를 통해 배열로 추가했습니다.
   - pushTag 함수를 실행 될 때 마다 map을 이용해 <span>으로 감싼 inputVal값이  
@@ -71,3 +73,37 @@
   - delete Btn을 이용해 원하지 않는 tag는 삭제가 가능합니다.
 
 ---
+
+## AutoComplete
+
+- 구현 방법
+
+  - AutoComplete가 구현되는 것이 보이게 하기위해 words라는 더미 데이터를
+    먼저 만든 후 input이 onChange 될 때 마다 검색할 수 있게 만드려 했습니다.
+
+  - 먼저 form 태그에 onSubmit을 통해 앞에 만들었던 Tag와 마찬가지로
+    event.preventDefault(); 을 주어 새로고침이 일어나지 않게하였습니다.
+
+  - inputVal이 업데이트 될 때 마다 words의 배열과 비교하기 위해
+    useEffect를 사용했고 fliter를 사용해 비교된 값이 리턴될 수 있게 하였습니다.
+    또 대소문자 구분없이 검색하게 하기 위해 toLowerCase()를 사용했습니다.
+
+  - <ul> 태그에 접근하기위해 useRef를 사용하여
+    .showList를 부여하고 삭제할 수 있었습니다.
+
+  - onChange event가 발생할 때 마다 <ul>가 깜빡이는 오류가 발생했으나
+    usestate를 사용해 focus true/false 값에 따라 깜빡이지 않게 하였습니다.
+
+  - submit event가 발생헤 onSubmit 함수가 실행 되었을 때 words에 inputVal를 추가해
+    words가 계속 업데이트 되도록 하였고 inputBox가 리셋되게 하고 <ul>에 showList를
+    제거해 초기 상태를 만들어 주었습니다.
+
+- 실행 방법
+
+  - search anything에 text 입력 하면 autoComplete 되는 단어를 찾을 수 있습니다.
+  - 찾아진 text를 클릭 시 input Box에 값으로 할당됩니다.
+  - enter 키를 누르면 이벤트가 발생 해 포털 사이트 최근 검색어 같이 자동 완성
+    list에 추가 됩니다.
+  - x 버튼을 누르면 입력한 text를 삭제할 수 있습니다.
+
+  ***
