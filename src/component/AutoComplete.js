@@ -15,9 +15,10 @@ const AutoComplete = (props) => {
   const [focus, setFocus] = useState(false);
   const [inputVal, setInputVal] = useState('');
   const [wordList, setWordList] = useState(words);
-
   const autoList = useRef(null);
 
+  // submit 함수 words에 입력한 값을 추가 시켜주고
+  // input box를 리셋 시켜줌
   const onSubmit = (event) => {
     event.preventDefault();
     console.log('hi');
@@ -30,6 +31,8 @@ const AutoComplete = (props) => {
     autoList.current.classList.remove('showList');
   };
 
+  // useEffect를 이용해 inputVal이 변할 떄 마다
+  // words에서 검색
   useEffect(() => {
     setWordList(
       words.filter((item) => {
@@ -38,6 +41,7 @@ const AutoComplete = (props) => {
     );
   }, [inputVal]);
 
+  //input box에 text를 넣고 list를 보여주는 함수
   const onChange = (event) => {
     setInputVal(event.target.value);
     if (focus === true) {
@@ -51,12 +55,20 @@ const AutoComplete = (props) => {
       setFocus(true);
     }
   };
+
+  // li 클릭 시 input 값으로 넣어줌
+  const selectWord = (event) => {
+    setInputVal(event.target.innerText);
+  };
+
+  //li를 형성하는 함수
   const pushWord = wordList.map((item, index) => (
-    <li className='word' id={index}>
+    <li className='word' id={index} onClick={selectWord}>
       {item}
     </li>
   ));
 
+  //deletebtn 함수
   const deleteBtn = () => {
     setInputVal('');
     autoList.current.classList.remove('showList');
