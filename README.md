@@ -1,4 +1,8 @@
-## 💾 원티드 프리온보딩 과제
+## 🚀 원티드 프리온보딩 과제
+
+## 💾 배포
+
+🚗[바로가기](https://youngjejo.github.io/wanted_pre_onboarding/)
 
 ## 구현 기능
 
@@ -16,7 +20,8 @@
 ## ![반응형](/src/img/반응형.png)
 
 - css 구성
-  - ul는 전체적으로 도구모음 컨셉으로 한눈에 보일수 있도록 만들었습니다.
+  - UI는 전체적으로 도구모음 컨셉으로 한눈에 보일수 있도록 만들었습니다.
+  - 컴포넌트 나열은 flex를 사용하여 적용시켰습니다.
   - aquamarine 색을 중심으로 컬러를 통일 시켰습니다.
   - 전체적으로 box-shadow를 적용시켜 입체감이 있게 만들었습니다.
   - transition을 전체적으로 줘 모든 이벤트 시 동일하게 적용되도록 하였습니다.
@@ -31,7 +36,7 @@
 
 - 구현 방법
 
-  - <button>에 onClick event에 함수를 주어 구현
+  - button에 onClick event에 함수를 주어 구현
   - classList.toggle을 주어 버튼과 배경이 움직이도록 구현함
   - state로 toggleBox 안에 text on/ off가 변하도록 함
 
@@ -76,7 +81,7 @@
     새로고침이 일어나지 않게하였습니다.
   - useState를 이용해 input의 value 값을 inputVal에 할당했습니다.
   - onSubmit 함수가 실행되면 trim을 이용해 공백만 태그로 들어가지 않게했습니다. - value값을 얕은 복사를 통해 배열로 추가했습니다.
-  - pushTag 함수를 실행 될 때 마다 map을 이용해 <span>으로 감싼 inputVal값이  
+  - pushTag 함수를 실행 될 때 마다 map을 이용해 span으로 감싼 inputVal값이  
     return 되게 하여 tag가 출력되게 하였습니다.
   - deleteBtn은 event가 일어날 때 마다 제거하는 기능을 만들기 위해
     해당 부모 태그인 span에 parentNode를 사용해 접근하였고 id를 추적해 브라우저에
@@ -104,14 +109,14 @@
     useEffect를 사용했고 fliter를 사용해 비교된 값이 리턴될 수 있게 하였습니다.
     또 대소문자 구분없이 검색하게 하기 위해 toLowerCase()를 사용했습니다.
 
-  - <ul> 태그에 접근하기위해 useRef를 사용하여
+  - ul 태그에 접근하기위해 useRef를 사용하여
     .showList를 부여하고 삭제할 수 있었습니다.
 
-  - onChange event가 발생할 때 마다 <ul>가 깜빡이는 오류가 발생했으나
+  - onChange event가 발생할 때 마다 ul이 깜빡이는 오류가 발생했으나
     usestate를 사용해 focus true/false 값에 따라 깜빡이지 않게 하였습니다.
 
   - submit event가 발생헤 onSubmit 함수가 실행 되었을 때 words에 inputVal를 추가해
-    words가 계속 업데이트 되도록 하였고 inputBox가 리셋되게 하고 <ul>에 showList를
+    words가 계속 업데이트 되도록 하였고 inputBox가 리셋되게 하고 ul에 showList를
     제거해 초기 상태를 만들어 주었습니다.
 
 - 실행 방법
